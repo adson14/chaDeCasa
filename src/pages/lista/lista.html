@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color="custom-color">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+     
+    <ion-title >
+      Categorias
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page5">
+  <ion-card id="sobre-card24">
+    <ion-list>
+      <ion-item color="custom-color" id="sobre-list-item9">
+        <ion-icon name="cafe" item-left></ion-icon>
+        Chá de Casa
+      </ion-item>
+      
+      
+       <ion-item-sliding *ngFor ='let categoria of categoria' (click)="seleciona(categoria)" id="restaurantes-card21">
+      <ion-item>
+          <ion-icon  item-start>
+              <img src="{{categoria.img_url}}">
+           
+            </ion-icon>
+        <h2>{{ categoria.nome }} </h2>
+      </ion-item>
+ 
+     
+    </ion-item-sliding>
+    </ion-list>
+  </ion-card>
+ 
+  
+</ion-content>
+<ion-footer>
+    <ion-toolbar class="footer">
+      <ion-title>Chá de Casa 1.0</ion-title>
+    </ion-toolbar>
+  </ion-footer>

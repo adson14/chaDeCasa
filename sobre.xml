@@ -1,0 +1,33 @@
+<!--
+
+O aplicativo foi desenvolvido para um chá de casa contendo todos os itens que os noivos precisam
+para o casamento.
+
+Primeiro é apresentado a lista de categoria e ao clicar na categoria desejada o usuário 
+é direcionado a outra pagina que recebe o id da categoria selecionada e exibe o json 
+já montado para receber e mostrar os dados.Nessa lista é mostrado todos os itens da categoria
+que é  indicado em figuras como já adquirido ou ainda não adquirido
+
+A página doar é mostrada com os dados bancários do casal com um link para o whatsapp, para
+contato com os noivos
+
+A página noivos mostra o nome dos noivos, a foto, e uma mensagems escolhida para exibir
+
+
+A página localização mostra os dados de onde acontecerá o evento , mostrandos dados da API do mapas
+com o endereço descrito , também mostra a data e horário do evento
+
+
+A maioria dos dados carregados vem de webservice via JSON, com exceção do link Whatsapp
+
+As cores padão do app estão definidas nos arquivos scss ou no arquivo theme principal
+
+
+
+
+
+
+
+-->
+
+

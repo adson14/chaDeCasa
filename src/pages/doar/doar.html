@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar color="custom-color">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Doar
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding style="" id="page6">
+  <ion-card *ngFor ='let doar of doar' id="doar-card21">
+    <ion-list>
+      <ion-item color="custom-color" id="doar-list-item20">
+          <ion-icon name="cash" item-left></ion-icon>
+        Depósito Bancário
+      </ion-item>
+      
+      <ion-item id="doar-list-item-container3">
+        <div id="doar-markdown4" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">
+            {{doar.banco}}
+          </p>
+        </div>
+        <div id="doar-markdown5" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">
+            AGÊNCIA:{{doar.agencia}}
+          </p>
+        </div>
+        <div id="doar-markdown6" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">
+            CONTA:{{doar.conta}}
+          </p>
+        </div>
+      </ion-item>
+      <ion-item color="positive" id="doar-list-item21">
+        <ion-icon name="cash" item-left></ion-icon>
+        {{doar.beneficiario}}
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <div id="doar-markdown8" class="show-list-numbers-and-dots"></div>
+  <ion-card *ngFor ='let doar of doar' id="doar-card22">
+    <ion-list>
+     
+      <p padding style="margin-top:0px;color:#932424;font-size:14px;">
+        {{doar.mensagem}}
+      </p>
+      
+      
+      <a href="https://api.whatsapp.com/send?phone=5531993136324">
+      <ion-item color="balanced" href="tel:" id="doar-list-item26">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        
+        
+        {{doar.contato}}
+      </ion-item>
+    </a>
+      
+    </ion-list>
+  </ion-card>
+</ion-content>
+<ion-footer>
+    <ion-toolbar class="footer">
+      <ion-title>Chá de Casa 1.0</ion-title>
+    </ion-toolbar>
+  </ion-footer>

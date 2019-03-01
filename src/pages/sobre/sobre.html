@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-navbar color="custom-color">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Localização
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page8">
+    
+    
+  <ion-card *ngFor ='let sobre of sobre' id="sobre-card24" >
+      <ion-list>
+      <ion-item color="custom-color" id="sobre-list-item9">
+        <ion-icon name="cafe" item-left></ion-icon>
+        Chá de Casa
+      </ion-item>
+    
+      <!--O iframe recebe a url vinda do json para isso é preciso usar o metodo anitizer.bypass
+      pois caso contrário o ANgular bloquei considerando como não seguro
+      -->
+        <iframe [src]="this.anitizer.bypassSecurityTrustResourceUrl(sobre.url_localizacao)" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
+      <ion-item id="sobre-list-item-container9">
+        <div id="sobre-markdown11" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">
+            
+            {{ sobre.rua }}
+            
+          </p>
+          
+        </div>
+        <br>
+        <div id="sobre-markdown12" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">
+            {{ sobre.bairro }}
+          </p>
+        </div>
+        <div id="sobre-markdown14" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">
+            {{ sobre.cidade }} - {{ sobre.uf }}
+          </p>
+        </div>
+        <div id="sobre-markdown15" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">
+            {{ sobre.referencia }}
+          </p>
+        </div>
+      </ion-item>
+      <ion-item color="custom-color" id="sobre-list-item10">
+        <ion-icon name="calendar" item-left></ion-icon>
+        Dia {{ sobre.data }}
+      </ion-item>
+      <br>
+      <ion-item color="custom-color" id="sobre-list-item11">
+        <ion-icon name="time" item-left></ion-icon>
+        Às {{ sobre.hora }}
+      </ion-item>
+    </ion-list>
+  
+  </ion-card>
+
+</ion-content>
+<ion-footer>
+    <ion-toolbar class="footer">
+      <ion-title>Chá de Casa 1.0</ion-title>
+    </ion-toolbar>
+  </ion-footer>

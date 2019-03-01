@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "904698297773",
+    "firebase_url": "https://notify-be511.firebaseio.com",
+    "project_id": "notify-be511",
+    "storage_bucket": "notify-be511.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904698297773:android:559b2e145485df71",
+        "android_client_info": {
+          "package_name": "com.jesusadson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904698297773-5vl9rpkqi6eshdrqi8huevjdgigb4j4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD8d98420z_VaM1wHkwJZNMe1gun7_c-M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
